@@ -1,0 +1,106 @@
+
+:root {
+  --violet: #6c5ce7;
+  --vert: #00b894;
+  --clair: #f5f6fa;
+  --ombre: rgba(0, 0, 0, 0.1);
+  --text: #2d3436;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--clair);
+}
+
+.hero {
+  background: url('./arriere_plan.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* filtre assombrissant */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 15px 30px var(--ombre);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.hero h1 span {
+  color: var(--vert);
+}
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: var(--violet);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #5e54c4;
+}
+
+.btn.alt {
+  background: var(--vert);
+}
+.btn.alt:hover {
+  background: #019875;
+}
+
+
+
+
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+

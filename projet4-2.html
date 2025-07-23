@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4-2.css">
+        <link rel="stylesheet" href="style-menu.css">
+
+</head>
+<body>
+<header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">🐔 <span>Barro Service</span></div>
+    
+    <!-- Bouton Burger -->
+    <button class="burger" id="burger" aria-label="Menu">
+      ☰
+    </button>
+
+    <!-- Menu de navigation -->
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projet4-2.html">À propos</a>
+      <a href="projet4-1.html">Produits</a>
+      <a href="projet4-3.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="vendeur-section">
+  <div class="vendeur-container">
+    <div class="vendeur-texte">
+      <h2>👩🏾‍🌾 Qui suis-je ?</h2>
+      <p>
+        Je suis <strong>Barro Service</strong>, Vous y trouverez un homme passionné par l’élevage et l’artisanat. Depuis plus de 10 ans, je propose des produits sains et faits avec le cœur. Chaque poule que je vends est élevée naturellement, et chaque coussin est cousu dans mon petit atelier familial.
+      </p>
+      <p>
+        Mon but est simple : offrir à mes clients ce que j’aimerais recevoir moi-même — qualité, honnêteté et chaleur humaine.
+      </p>
+    </div>
+    <div class="vendeur-img reveal">
+      <img src="personne.jpg" alt="Fatou">
+    </div>
+  </div>
+</section>
+
+<section class="produits-section">
+  <div class="produits-container">
+    <div class="produit-img reveal left">
+      <img src="poule noir.jpg" alt="Poule">
+    </div>
+    <div class="produit-texte">
+      <h2>🐔 Les Poules & Coqs</h2>
+      <p>
+        Nos volailles sont nourries à base de grains naturels et grandissent dans un environnement sain. Elles sont reconnues pour leur goût savoureux et leur vitalité. Que ce soit pour les repas en famille ou les cérémonies, vous trouverez chez nous la qualité.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="coussins-section">
+  <div class="coussins-container">
+    <div class="coussins-texte">
+      <h2>🐣 Les Poussins Élevés avec Soin</h2>
+      <p>
+Chaque poussin que je propose est issu d’un élevage attentif, dans des conditions respectueuses de leur bien-être. Nourris naturellement et suivis avec rigueur, ces poussins sont idéals pour les amateurs d’aviculture ou pour développer votre propre basse-cour. Mon engagement reflète ma passion pour une agriculture saine, responsable et locale.
+      </p>
+    </div>
+    <div class="coussins-img reveal right">
+      <img src="poussin.jpg">
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col brand">
+      <h3>🐔 Chez Fatou</h3>
+      <p>Produits fermiers et artisanaux : poussins, poules, coqs, coussins.</p>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>📞 Contact</h4>
+      <ul>
+        <li>📍 Dakar, Sénégal</li>
+        <li>📱 <a href="tel:+221771234567">+221 77 123 45 67</a></li>
+        <li>💬 <a href="https://wa.me/221771234567" target="_blank">WhatsApp direct</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col links">
+      <h4>🔗 Liens utiles</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet4-2.html">À propos</a></li>
+        <li><a href="projet4-1.html">Produits</a></li>
+        <li><a href="projet4-3.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Chez Fatou – Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.reveal').forEach((el) => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight * 0.9) {
+      el.classList.add('visible');
+    }
+  });
+});
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
